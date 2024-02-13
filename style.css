@@ -1,0 +1,87 @@
+#container{
+  display: flex;
+  justify-content: center;
+}
+
+#heart {
+  position: relative;
+    --c: rgb(255, 36, 36);
+    width: 600px;
+    aspect-ratio: 1;
+    background:
+     /* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+     /* 2 */ radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+     /* 3 */ conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+    background-repeat: no-repeat;
+  }
+
+#image1{
+  position: relative;
+  top: 50px;
+  left: 90px;
+  height: 4cm;
+  width: 4cm;
+  background-color: green;
+  border-radius: 50%;
+  border: 7px solid rgb(255, 3, 129);
+  visibility: hidden;
+  animation: zoom 4s;
+}
+
+#image2{
+  position: relative;
+  top: 50px;
+  left: 180px;
+  height: 4cm;
+  width: 4cm;
+  background-color: green;
+  border-radius: 50%;
+  border: 7px solid rgb(255, 3, 129);
+  visibility: hidden;
+  transition: all 5s;
+  animation: zoom 4s;
+}
+
+#image3{
+  position: relative;
+  top: 200px;
+  right: 110px;
+  height: 4cm;
+  width: 4cm;
+  background-color: green;
+  border-radius: 50%;
+  border: 7px solid rgb(255, 3, 129);
+  visibility: hidden;
+  animation: zoom 4s;
+}
+
+@keyframes zoom {
+  from{height: 0cm;
+  width: 0cm;}
+  to{
+    height: 4cm;
+    width: 4cm;
+  }
+}
+
+#image4{
+  position: relative;
+  bottom: 70px;
+  left: 140px;
+  right: 110px;
+  height: 8cm;
+  width: 8cm;
+  background-color: green;
+  border-radius: 50%;
+  border: 7px solid rgb(255, 3, 129);
+  visibility: hidden;
+  animation: BigZoom 4s;
+}
+@keyframes BigZoom {
+  from{height: 0cm;
+  width: 0cm;}
+  to{
+    height: 4cm;
+    width: 4cm;
+  }
+}
